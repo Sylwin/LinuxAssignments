@@ -1,0 +1,50 @@
+Szanowni Studenci,
+
+zgodnie z obietnicą przesyłam
+1. lokalizację materiałów o przekierowywaniu strumieni
+http://www.catonmat.net/blog/bash-one-liners-explained-part-three/
+http://wiki.bash-hackers.org/howto/redirection_tutorial
+
+2. zadania z redyrekcji
+
+a. Niech prg będzie dowolnym programem, który generuje cyklicznie
+jakieś napisy na stdout (mogą to być kolekne liczby, wypisywane
+w ustalonych odstępach czasowych).
+Stworzyć w bashu taką konstrukcję, która wyniki prg -równolegle-
+przepuści przez filtr numerujący linie i filtr kolorujący jakiś
+fragment (grep --color).
+
+Schemat:
+           ----->   <numerowanie> ----
+          |                           |
+   prg ---                             ---> stdout
+          |                           |
+           ----->   <kolorowanie> ----
+
+
+b. Za pomocą samej redyrekcji spowodować wysyłanie wyników na dwa
+(różne) strumienie.
+
+Schemat:
+           ----->   <stdout>
+          |
+   prg ---
+          |
+           ----->   <stderr>
+
+
+3. problem do przestudiowania (związany z sygnałami)
+
+"      Porównać działanie programów lampowy_1, lampowy_2, kwarcowy_1
+i kwarcowy_2 oraz przeanalizować ich żródła. Wyjaśnić skąd się biorą
+różnice. "
+
+  - wspomniane programy są generowane przez załączony Makefile
+
+4. zadanie z sygnałów (załączony PDF).
+
+Proszę dokończyć pierwsze zadanie (on_exit) gdyż kryje się w nim pewien
+niuans, który warto poznać.
+
+Z poważaniem
+P.Oleksik
